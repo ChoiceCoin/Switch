@@ -1,0 +1,17 @@
+#pragma version 2
+txn TypeEnum
+int axfer
+==
+txn XferAsset
+int 297995609
+==
+&&
+txn AssetAmount
+int 1
+==
+&&
+txn Receiver
+addr 5AL546QOEXTJD3JDO7RIUVTNVCQWNXSRMAULCR7DZYFAIYZP2GWEOKI2PE
+==
+&&
+return

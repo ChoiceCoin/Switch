@@ -1,4 +1,20 @@
-#pragma version 2
+#pragma version 5
+txn ApplicationID
+int 0
+==
+bnz main_l12
+txn TypeEnum
+int axfer
+==
+bnz main_l11
+txn XferAsset
+int 297995609
+==
+bnz main_l10
+txn AssetAmount
+int 1
+==
+bnz main_l9
 txn TypeEnum
 int axfer
 ==
@@ -14,4 +30,43 @@ txn Receiver
 addr 5AL546QOEXTJD3JDO7RIUVTNVCQWNXSRMAULCR7DZYFAIYZP2GWEOKI2PE
 ==
 &&
+bnz main_l8
+int 1
+bnz main_l7
+err
+main_l7:
+int 0
+return
+main_l8:
+itxn_begin
+int axfer
+itxn_field TypeEnum
+int 297995609
+itxn_field XferAsset
+int 2
+itxn_field AssetAmount
+txn Sender
+itxn_field Receiver
+itxn_submit
+int 1
+return
+main_l9:
+txn AssetAmount
+itob
+log
+int 1
+return
+main_l10:
+txn XferAsset
+itob
+log
+int 1
+return
+main_l11:
+byte "Txn Type"
+log
+int 1
+return
+main_l12:
+int 1
 return

@@ -12,3 +12,6 @@ Lightswitch takes in one Choice and switches it for two Choice.
 
 [v1 Smart Contract | App ID 2267436284](https://allo.info/application/2267436284)
 
+```
+goal app create --creator 5AL546QOEXTJD3JDO7RIUVTNVCQWNXSRMAULCR7DZYFAIYZP2GWEOKI2PE --approval-prog approval.teal --clear-prog clear_state.teal --global-byteslices 0 --global-ints 0 --local-byteslices 0 --local-ints 0
+```

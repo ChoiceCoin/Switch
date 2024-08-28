@@ -9,3 +9,6 @@ Lightswitch takes in one Choice and switches it for two Choice.
 4. If the smart contract approves the trransaction, 2 Choice are returned.
 5. If the smart contract rejects the transaction, no Choice are returned.
 
+
+[v1 Smart Contract | App ID 2267436284](https://allo.info/application/2267436284)
+

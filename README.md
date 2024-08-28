@@ -11,6 +11,7 @@ Lightswitch takes in one Choice and switches it for two Choice.
 
 
 [v0.1 | App ID 2267436284](https://allo.info/application/2267436284)
+
 [v0.1 | App ID 2267616358](https://allo.info/application/2267616358)
 
 ```

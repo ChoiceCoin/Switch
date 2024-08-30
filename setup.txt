@@ -1,0 +1,3 @@
+export ALGORAND_DATA=/var/lib/algorand
+export ALGORAND_DATA="$HOME/node/data"
+export PATH="$HOME/node:$PATH"

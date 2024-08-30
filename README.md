@@ -24,6 +24,8 @@ Version v0.0 - v0.2 are live, but not properly functional.
 
 [v0.3 | App ID 2269161869](https://allo.info/application/2269161869)
 
+[v0.4 | App ID 2269165240](https://allo.info/application/2269165240)
+
 ____________________________________________________________
 
 Command line instructions.

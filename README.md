@@ -14,7 +14,7 @@ Lightswitch takes in one Choice and switches it for two Choice.
 ____________________________________________________________
 # Versions
 
-Version v0.0 - v0.2 are live, but not properly functional.
+Version v0.0 - v0.4 are live, but not properly functional.
 
 [v0.0 | App ID 2267436284](https://allo.info/application/2267436284)
 

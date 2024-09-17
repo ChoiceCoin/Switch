@@ -26,6 +26,8 @@ Version v0.0 - v0.4 are live, but not properly functional.
 
 [v0.4 | App ID 2269165240](https://allo.info/application/2269165240)
 
+[v0.4| App Account 3IIMGQUYHAGU7RXFTCD6KO5N4TNMWKWY5UIHMNGHNAXWTCCB5G6Z2XH3II](https://allo.info/account/3IIMGQUYHAGU7RXFTCD6KO5N4TNMWKWY5UIHMNGHNAXWTCCB5G6Z2XH3II)
+
 ____________________________________________________________
 
 Command line instructions.

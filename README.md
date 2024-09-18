@@ -16,29 +16,29 @@ ____________________________________________________________
 
 Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Version v0.5 uses Teal 10.
 
-** v0.0 **
+**v0.0**
 [v0.0 | App ID 2267436284](https://allo.info/application/2267436284)
 
-** v0.1 **
+**v0.1**
 [v0.1 | App ID 2267616358](https://allo.info/application/2267616358)
 
-** v0.2 **
+**v0.2**
 [v0.2 | App ID 2267749636](https://allo.info/application/2267749636)
 
-** v0.3 **
+**v0.3**
 [v0.3 | App ID 2269161869](https://allo.info/application/2269161869)
 
-** v0.4 **
+**v0.4**
 [v0.4 | App ID 2269165240](https://allo.info/application/2269165240)
 
 [v0.4| App Account 3IIMGQUYHAGU7RXFTCD6KO5N4TNMWKWY5UIHMNGHNAXWTCCB5G6Z2XH3II](https://allo.info/account/3IIMGQUYHAGU7RXFTCD6KO5N4TNMWKWY5UIHMNGHNAXWTCCB5G6Z2XH3II)
 
-** v0.5 **
+**v0.5**
 [v0.5| App ID 2302405696](https://allo.info/application/2302405696)
 
 [v0.5| App Account E57YHA5WQZCEOHJ326R3SACSHK3HRRWBUFTYBH4E2SBYYNIFOVQD7ZDUAQ](https://allo.info/account/E57YHA5WQZCEOHJ326R3SACSHK3HRRWBUFTYBH4E2SBYYNIFOVQD7ZDUAQ)
 
-** v0.6 **
+**v0.6**
 
 *Coming soon.*
 ____________________________________________________________

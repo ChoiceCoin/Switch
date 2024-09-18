@@ -14,7 +14,7 @@ Lightswitch takes in one Choice and switches it for two Choice.
 ____________________________________________________________
 # Versions
 
-Version v0.0 - v0.4 are live, but not properly functional.
+Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Version v0.5 uses Teal 10.
 
 [v0.0 | App ID 2267436284](https://allo.info/application/2267436284)
 
@@ -27,6 +27,10 @@ Version v0.0 - v0.4 are live, but not properly functional.
 [v0.4 | App ID 2269165240](https://allo.info/application/2269165240)
 
 [v0.4| App Account 3IIMGQUYHAGU7RXFTCD6KO5N4TNMWKWY5UIHMNGHNAXWTCCB5G6Z2XH3II](https://allo.info/account/3IIMGQUYHAGU7RXFTCD6KO5N4TNMWKWY5UIHMNGHNAXWTCCB5G6Z2XH3II)
+
+[v0.5| App ID 2302405696](https://allo.info/application/2302405696)
+
+[v0.5| App Account E57YHA5WQZCEOHJ326R3SACSHK3HRRWBUFTYBH4E2SBYYNIFOVQD7ZDUAQ](https://allo.info/account/E57YHA5WQZCEOHJ326R3SACSHK3HRRWBUFTYBH4E2SBYYNIFOVQD7ZDUAQ)
 
 ____________________________________________________________
 

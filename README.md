@@ -14,7 +14,7 @@ Lightswitch takes in one Choice and switches it for two Choice.
 ____________________________________________________________
 # Versions
 
-Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Version v0.5 uses Teal 10.
+Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Version v0.5 and v0.6 both use Teal 10, but are also not functional.
 
 **v0.0**
 

@@ -2,19 +2,23 @@
 txn ApplicationID
 int 0
 ==
-bnz main_l14
+bnz main_l12
 txn OnCompletion
 int OptIn
 ==
-bnz main_l13
-txna ApplicationArgs 0
-byte "app_fund"
-==
-bnz main_l12
-txna ApplicationArgs 0
-byte "optin_asset"
-==
 bnz main_l11
+txn TypeEnum
+int pay
+==
+txn Amount
+int 1000000
+>=
+&&
+txn Receiver
+global CurrentApplicationAddress
+==
+&&
+bnz main_l10
 txn TypeEnum
 int axfer
 ==
@@ -31,14 +35,14 @@ txna ApplicationArgs 0
 btoi
 ==
 &&
-bnz main_l8
-int 1
 bnz main_l7
+int 1
+bnz main_l6
 err
-main_l7:
+main_l6:
 int 0
 return
-main_l8:
+main_l7:
 global Round
 itob
 global LatestTimestamp
@@ -50,7 +54,7 @@ int 2
 %
 int 1
 ==
-bnz main_l10
+bnz main_l9
 itxn_begin
 int axfer
 itxn_field TypeEnum
@@ -64,7 +68,7 @@ itxn_field AssetReceiver
 itxn_submit
 int 1
 return
-main_l10:
+main_l9:
 itxn_begin
 int axfer
 itxn_field TypeEnum
@@ -80,7 +84,7 @@ itxn_field AssetReceiver
 itxn_submit
 int 1
 return
-main_l11:
+main_l10:
 itxn_begin
 int axfer
 itxn_field TypeEnum
@@ -93,20 +97,9 @@ itxn_field AssetAmount
 itxn_submit
 int 1
 return
+main_l11:
+int 1
+return
 main_l12:
-itxn_begin
-int pay
-itxn_field TypeEnum
-global CurrentApplicationAddress
-itxn_field AssetReceiver
-int 1000000
-itxn_field AssetAmount
-itxn_submit
-int 1
-return
-main_l13:
-int 1
-return
-main_l14:
 int 1
 return

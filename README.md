@@ -70,5 +70,10 @@ The smart contract:
 7. If the validation is 0, the contract does nothing.
 
 
+# References
+
+[PyTeal](https://pyteal.readthedocs.io/en/stable/)
+[The Algorand Virtual Machine and TEAL](https://developer.algorand.org/docs/get-details/dapps/avm/teal/specification/)
+[Algorand v10 opcodes](https://developer.algorand.org/docs/get-details/dapps/avm/teal/opcodes/v10/)
 
 

@@ -76,6 +76,8 @@ The smart contract:
 
 # References
 
+[Build an Algorand Smart Contract](https://github.com/Bhaney44/Build-an-Algorand-Smart-Contract)
+
 [PyTeal](https://pyteal.readthedocs.io/en/stable/)
 
 [The Algorand Virtual Machine and TEAL](https://developer.algorand.org/docs/get-details/dapps/avm/teal/specification/)

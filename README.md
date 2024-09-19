@@ -47,10 +47,11 @@ Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Versio
 **v0.6**
 
 [v0.6 App ID 2304378520](https://allo.info/application/2304378520)
+
 [v0.6 App Account FEZCDW5JVYUMGDDMOBDNAUFEQFSG2QM322XKEMG4OPTXLD4PLDCWXVPLG4](https://allo.info/account/FEZCDW5JVYUMGDDMOBDNAUFEQFSG2QM322XKEMG4OPTXLD4PLDCWXVPLG4)
 
 **v0.07**
-Coming Soon.
+_Coming Soon._
 ____________________________________________________________
 
 Command line instructions.

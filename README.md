@@ -51,6 +51,7 @@ Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Versio
 [v0.6 App Account FEZCDW5JVYUMGDDMOBDNAUFEQFSG2QM322XKEMG4OPTXLD4PLDCWXVPLG4](https://allo.info/account/FEZCDW5JVYUMGDDMOBDNAUFEQFSG2QM322XKEMG4OPTXLD4PLDCWXVPLG4)
 
 **v0.07**
+
 _Coming Soon._
 ____________________________________________________________
 

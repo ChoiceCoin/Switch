@@ -16,6 +16,7 @@ ____________________________________________________________
 
 Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Version v0.5 and v0.6 both use Teal 10, but are also not functional.
 Version v0.7 - v0.9 are able to optin, but not functional as applications.
+Version v1.0 is functional.
 
 **v0.0**
 
@@ -68,6 +69,12 @@ v0.8 4CQG7GKSMFSO427SKDRR2OYE7TKZRA56JXXGMOPH2YJHZ7RYIFGU5RJNSM
 v0.9 2307432714
 
 v0.9 VKOTZ7M53NP56BKDFXOFNCVJDJEORIY7F6WZXOEGKXYJ2YIEQANORKKZS4
+
+**v1.0**
+
+v1.0 2307526839
+
+v1.0 W4G35ELHNB5L34MD72WV2TM4HE54NM7TRJKXZCFUMBHXVQOWGBVUB2I5W4
 ____________________________________________________________
 
 Command line instructions.

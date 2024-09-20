@@ -15,6 +15,7 @@ ____________________________________________________________
 # Versions
 
 Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Version v0.5 and v0.6 both use Teal 10, but are also not functional.
+Version v0.7 - v0.9 are able to optin, but not functional as applications.
 
 **v0.0**
 
@@ -50,23 +51,23 @@ Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Versio
 
 [v0.6 App Account FEZCDW5JVYUMGDDMOBDNAUFEQFSG2QM322XKEMG4OPTXLD4PLDCWXVPLG4](https://allo.info/account/FEZCDW5JVYUMGDDMOBDNAUFEQFSG2QM322XKEMG4OPTXLD4PLDCWXVPLG4)
 
-**v0.07**
+**v0.7**
 
 v0.7 App ID 2307344688
 
 v0.7 App Account B44AKSMBEO6ZVAWSXSQX2AIE3Z5OCMNYZEATNOBBSWEIXZHRMO6YPDE4J4
 
-**v0.08**
+**v0.8**
 
-v0.08 2307395041
+v0.8 2307395041
 
-v0.08 4CQG7GKSMFSO427SKDRR2OYE7TKZRA56JXXGMOPH2YJHZ7RYIFGU5RJNSM
+v0.8 4CQG7GKSMFSO427SKDRR2OYE7TKZRA56JXXGMOPH2YJHZ7RYIFGU5RJNSM
 
-**v0.09**
+**v0.9**
 
-v0.09 2307432714
+v0.9 2307432714
 
-v0.09 VKOTZ7M53NP56BKDFXOFNCVJDJEORIY7F6WZXOEGKXYJ2YIEQANORKKZS4
+v0.9 VKOTZ7M53NP56BKDFXOFNCVJDJEORIY7F6WZXOEGKXYJ2YIEQANORKKZS4
 ____________________________________________________________
 
 Command line instructions.

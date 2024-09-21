@@ -6,7 +6,7 @@ Lightswitch project for Choice Coin using Algorand Smart Contracts.
 ____________________________________________________________
 **v1.0**
 
-Lightswitch **v1.0** takes in one Choice and switches it for two Choice.
+Lightswitch **v1.1** takes in one Choice and switches it for two Choice.
 
 1. Sender sends 1 Choice to Application ID ##########.
 2. Smart Contract recieves 1 Choice, user address, and smart signature.

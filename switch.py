@@ -22,11 +22,11 @@ def approval_program():
     ############################################################
     # Detect the funding transaction (1 Algo sent to the escrow)
     ##############################
-    funding_amount = Int(1000000)  
+    funding_amount = Int(100000)  
     is_funding_txn = And(
-        Txn.type_enum() == TxnType.Payment,                         
-        Txn.amount() >= funding_amount,                             
-        Txn.receiver() == Global.current_application_address()     
+        Gtxn[1].type_enum() == TxnType.Payment,                         
+        Gtxn[1].amount() >= funding_amount,                             
+        Gtxn[1].receiver() == Global.current_application_address()     
     )
     ##############################
     # Logic for opt-in to the asset_id using an inner transaction
@@ -48,43 +48,61 @@ def approval_program():
     # App logic
     ############################################################
     # User specified amount
-    user_specified_amount = Btoi(Txn.application_args[0])
+    user_specified_amount = Int(100) 
     is_valid_transfer = And(
-        Txn.type_enum() == TxnType.AssetTransfer,
-        Txn.xfer_asset() == asset_id,
-        Txn.asset_receiver() == Global.current_application_address(),
-        Txn.asset_amount() == user_specified_amount 
+        Gtxn[1].type_enum() == TxnType.AssetTransfer,
+        Gtxn[1].xfer_asset() == asset_id,
+        Gtxn[1].asset_receiver() == Global.current_application_address(),
+        Gtxn[1].asset_amount() == user_specified_amount 
     )
+    # return transaction to user
+    ############################
+    send_to_user = Seq([
+        InnerTxnBuilder.Begin(),
+        InnerTxnBuilder.SetFields({
+            TxnField.type_enum: TxnType.AssetTransfer,
+            TxnField.xfer_asset: asset_id,
+            TxnField.asset_receiver: Txn.sender(),  
+            TxnField.asset_amount:  Mul(user_specified_amount, Int(2)),  
+        }),
+        InnerTxnBuilder.Submit(),
+        Approve()  
+    ])
+    ##############################
+    # return transaction to burn address
+    ############################
+    send_to_burn = Seq([
+        InnerTxnBuilder.Begin(),
+        InnerTxnBuilder.SetFields({
+            TxnField.type_enum: TxnType.AssetTransfer,
+            TxnField.xfer_asset: asset_id,
+            TxnField.asset_receiver: Addr("6G5V4U2MCW5TIZ7JP6BZFQELTGGJBEG5EVSQRQQRLEZM3V6DXOPV5TUJQA"),  
+            TxnField.asset_amount: user_specified_amount,  
+        }),
+        InnerTxnBuilder.Submit(),
+        Approve()  
+    ])
+
     ##############################
     # Generate random number
     ##############################
-    round_number = Global.round()
-    time_stamp = Global.latest_timestamp()
-    combined = Sha256(Concat(Itob(round_number), Itob(time_stamp)))  
-    normalized_random_value = Btoi(combined) % Int(2) 
-    ############################
-    # return transaction to user
-    ############################
-    send_to_user = InnerTxnBuilder.Execute({
-        TxnField.type_enum: TxnType.AssetTransfer,
-        TxnField.xfer_asset: asset_id,
-        TxnField.asset_amount: Mul(user_specified_amount, Int(2)), 
-        TxnField.asset_receiver: Txn.sender(),
-    })
-    ##############################
-    # return transaction to burn address
-    ##############################
-    send_to_burn = InnerTxnBuilder.Execute({
-        TxnField.type_enum: TxnType.AssetTransfer,
-        TxnField.xfer_asset: asset_id,
-        TxnField.asset_amount: user_specified_amount,  
-        TxnField.asset_receiver: Addr("6G5V4U2MCW5TIZ7JP6BZFQELTGGJBEG5EVSQRQQRLEZM3V6DXOPV5TUJQA"),
-    })
+    def generate_number():
+        # Fetch current round number and latest timestamp
+        round_number = Global.round()
+        time_stamp = Global.latest_timestamp()
+        # Concatenate round number and timestamp as bytes
+        combined_bytes = Concat(Itob(round_number), Itob(time_stamp))
+        # Compute SHA-256 hash of the combined bytes
+        combined_hash = Sha256(combined_bytes)
+        # Convert the first 8 bytes of the hash to integer and normalize to 0 or 1
+        random_value = Btoi(Extract(combined_hash, Int(0), Int(8))) % Int(2)
+        return random_value
+
     ##############################
     # conditional logic and execution
     ##############################
     handle_random_txn = If(
-        normalized_random_value == Int(1),
+        generate_number() == Int(1),
         Seq([send_to_user, Approve()]),  
         Seq([send_to_burn, Approve()])  
     )

@@ -5,7 +5,7 @@ Lightswitch project for Choice Coin using Algorand Smart Contracts.
 
 # Versions
 
-For complete versions history, see versions.md. Version **v1.0** and **v1.1** are functional.
+For complete versions history, see [versions.md](https://github.com/Bhaney44/Switch/blob/main/versions.md). Version **v1.0** and **v1.1** are functional.
 
 ____________________________________________________________
 **v1.0**

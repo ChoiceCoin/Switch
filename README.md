@@ -36,7 +36,7 @@ The smart contract:
 6. If the validation is 1, the contract sends the user 2x the amount of Choice sent.
 7. If the validation is 0, the contract does nothing.
 
-v1.1 App ID 2311621083 | [PeraExplorer](https://explorer.perawallet.app/application/2311621083/)| [AlloExplorer](https://allo.info/application/2311621083)
+v1.1 App ID 2311621083 | [PeraExplorer](https://explorer.perawallet.app/application/2311621083/) | [AlloExplorer](https://allo.info/application/2311621083)
 
 v1.1 App Account KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE | [PeraExplorer](https://explorer.perawallet.app/address/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE/) | [AlloExplorer](https://allo.info/account/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE)
 ____________________________________________________________

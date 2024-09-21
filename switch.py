@@ -68,16 +68,16 @@ def approval_program():
         InnerTxnBuilder.Submit(),
         Approve()  
     ])
-    ##############################
-    # return transaction to burn address
+
+    # return transaction to user
     ############################
-    send_to_burn = Seq([
+    send_nothing = Seq([
         InnerTxnBuilder.Begin(),
         InnerTxnBuilder.SetFields({
             TxnField.type_enum: TxnType.AssetTransfer,
             TxnField.xfer_asset: asset_id,
-            TxnField.asset_receiver: Addr("6G5V4U2MCW5TIZ7JP6BZFQELTGGJBEG5EVSQRQQRLEZM3V6DXOPV5TUJQA"),  
-            TxnField.asset_amount: user_specified_amount,  
+            TxnField.asset_receiver: Txn.sender(),  
+            TxnField.asset_amount:  Mul(user_specified_amount, Int(0)),  
         }),
         InnerTxnBuilder.Submit(),
         Approve()  
@@ -103,8 +103,8 @@ def approval_program():
     ##############################
     handle_random_txn = If(
         generate_number() == Int(1),
-        Seq([send_to_user, Approve()]),  
-        Seq([send_to_burn, Approve()])  
+        Seq([send_to_user, Approve()]),
+        Seq([send_nothing, Approve()])   
     )
     ##############################
 

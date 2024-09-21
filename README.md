@@ -1,12 +1,12 @@
 ____________________________________________________________
-# Lightswitch
+# Switch
 
-Lightswitch project for Choice Coin using Algorand Smart Contracts.
+Switch project for Choice Coin using Algorand Smart Contracts.
 
 ____________________________________________________________
 **v1.0**
 
-Lightswitch **v1.0** takes in one Choice and switches it for two Choice.
+Switch **v1.0** takes in one Choice and switches it for two Choice.
 
 1. Sender sends 1 Choice to Application ID 2307526839
 2. Smart Contract recieves 1 Choice, user address, and smart signature.
@@ -21,7 +21,7 @@ Lightswitch **v1.0** takes in one Choice and switches it for two Choice.
 ____________________________________________________________
 **v1.1**
 
-Lightswitch **v1.1**  has an Application ID and an escrow account.
+Switch **v1.1**  has an Application ID and an escrow account.
 
 The smart contract:
 1. Is fundable with Choice and Algo.

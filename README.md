@@ -1,11 +1,11 @@
 ____________________________________________________________
 # Lightswitch
-____________________________________________________________
+
 Lightswitch project for Choice Coin using Algorand Smart Contracts.
 
 ____________________________________________________________
 **v1.0**
-____________________________________________________________
+
 Lightswitch **v1.0** takes in one Choice and switches it for two Choice.
 
 1. Sender sends 1 Choice to Application ID ##########.
@@ -20,7 +20,7 @@ v1.0 App Account W4G35ELHNB5L34MD72WV2TM4HE54NM7TRJKXZCFUMBHXVQOWGBVUB2I5W4 | [P
 
 ____________________________________________________________
 **v1.1**
-____________________________________________________________
+
 Lightswitch **v1.0**  has an Application ID and an escrow account.
 
 The smart contract:
@@ -37,6 +37,8 @@ v1.1 App ID 2311621083 | [PeraExplorer](https://explorer.perawallet.app/applicat
 v1.1 App Account KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE | [PeraExplorer](https://explorer.perawallet.app/address/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE/) | [AlloExplorer](https://allo.info/account/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE)
 ____________________________________________________________
 
+# Deployment 
+
 Command line instructions for deployment.
 
 ```
@@ -44,9 +46,8 @@ goal app create --creator 5AL546QOEXTJD3JDO7RIUVTNVCQWNXSRMAULCR7DZYFAIYZP2GWEOK
 ```
 ____________________________________________________________
 
-____________________________________________________________
 # References
-____________________________________________________________
+
 [Build an Algorand Smart Contract](https://github.com/Bhaney44/Build-an-Algorand-Smart-Contract)
 
 [PyTeal](https://pyteal.readthedocs.io/en/stable/)
@@ -57,6 +58,7 @@ ____________________________________________________________
 
 ____________________________________________________________
 # Versions
-____________________________________________________________
+
 For complete versions history, see [versions.md](https://github.com/Bhaney44/Switch/blob/main/versions.md). Version **v1.0** and **v1.1** are functional.
 
+____________________________________________________________

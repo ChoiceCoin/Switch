@@ -7,32 +7,31 @@ txn OnCompletion
 int OptIn
 ==
 bnz main_l11
-txn TypeEnum
+gtxn 1 TypeEnum
 int pay
 ==
-txn Amount
-int 1000000
+gtxn 1 Amount
+int 100000
 >=
 &&
-txn Receiver
+gtxn 1 Receiver
 global CurrentApplicationAddress
 ==
 &&
 bnz main_l10
-txn TypeEnum
+gtxn 1 TypeEnum
 int axfer
 ==
-txn XferAsset
+gtxn 1 XferAsset
 int 297995609
 ==
 &&
-txn AssetReceiver
+gtxn 1 AssetReceiver
 global CurrentApplicationAddress
 ==
 &&
-txn AssetAmount
-txna ApplicationArgs 0
-btoi
+gtxn 1 AssetAmount
+int 100
 ==
 &&
 bnz main_l7
@@ -49,6 +48,7 @@ global LatestTimestamp
 itob
 concat
 sha256
+extract 0 8
 btoi
 int 2
 %
@@ -60,12 +60,15 @@ int axfer
 itxn_field TypeEnum
 int 297995609
 itxn_field XferAsset
-txna ApplicationArgs 0
-btoi
-itxn_field AssetAmount
-addr 6G5V4U2MCW5TIZ7JP6BZFQELTGGJBEG5EVSQRQQRLEZM3V6DXOPV5TUJQA
+txn Sender
 itxn_field AssetReceiver
+int 100
+int 0
+*
+itxn_field AssetAmount
 itxn_submit
+int 1
+return
 int 1
 return
 main_l9:
@@ -74,14 +77,15 @@ int axfer
 itxn_field TypeEnum
 int 297995609
 itxn_field XferAsset
-txna ApplicationArgs 0
-btoi
+txn Sender
+itxn_field AssetReceiver
+int 100
 int 2
 *
 itxn_field AssetAmount
-txn Sender
-itxn_field AssetReceiver
 itxn_submit
+int 1
+return
 int 1
 return
 main_l10:

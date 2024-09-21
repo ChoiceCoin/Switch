@@ -14,9 +14,9 @@ Lightswitch **v1.0** takes in one Choice and switches it for two Choice.
 4. If the smart contract approves the trransaction, 2 Choice are returned.
 5. If the smart contract rejects the transaction, no Choice are returned.
 
-v1.0 App ID 2307526839 | [PeraExplorer](https://explorer.perawallet.app/application/2307526839/) | [AlloExplorer](https://allo.info/application/2307526839)
+**v1.0** | App ID **2307526839** | [PeraExplorer](https://explorer.perawallet.app/application/2307526839/) | [AlloExplorer](https://allo.info/application/2307526839)
 
-v1.0 App Account W4G35ELHNB5L34MD72WV2TM4HE54NM7TRJKXZCFUMBHXVQOWGBVUB2I5W4 | [PeraExplorer](https://explorer.perawallet.app/address/W4G35ELHNB5L34MD72WV2TM4HE54NM7TRJKXZCFUMBHXVQOWGBVUB2I5W4/) | [AlloExplorer](https://allo.info/account/W4G35ELHNB5L34MD72WV2TM4HE54NM7TRJKXZCFUMBHXVQOWGBVUB2I5W4)
+**v1.0** | App Account **W4G35ELHNB5L34MD72WV2TM4HE54NM7TRJKXZCFUMBHXVQOWGBVUB2I5W4** | [PeraExplorer](https://explorer.perawallet.app/address/W4G35ELHNB5L34MD72WV2TM4HE54NM7TRJKXZCFUMBHXVQOWGBVUB2I5W4/) | [AlloExplorer](https://allo.info/account/W4G35ELHNB5L34MD72WV2TM4HE54NM7TRJKXZCFUMBHXVQOWGBVUB2I5W4)
 
 ____________________________________________________________
 **v1.1**
@@ -32,9 +32,9 @@ The smart contract:
 6. If the validation is 1, the contract sends the user 2x the amount of Choice sent.
 7. If the validation is 0, the contract does nothing.
 
-v1.1 App ID 2311621083 | [PeraExplorer](https://explorer.perawallet.app/application/2311621083/) | [AlloExplorer](https://allo.info/application/2311621083)
+**v1.1** |  App ID **2311621083** | [PeraExplorer](https://explorer.perawallet.app/application/2311621083/) | [AlloExplorer](https://allo.info/application/2311621083)
 
-v1.1 App Account KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE | [PeraExplorer](https://explorer.perawallet.app/address/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE/) | [AlloExplorer](https://allo.info/account/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE)
+**v1.1** | App Account **KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE** | [PeraExplorer](https://explorer.perawallet.app/address/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE/) | [AlloExplorer](https://allo.info/account/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE)
 ____________________________________________________________
 
 # Deployment 

@@ -14,61 +14,8 @@ Lightswitch takes in one Choice and switches it for two Choice.
 ____________________________________________________________
 # Versions
 
-Version v0.0 - v0.4 are live and use Teal 5, but not properly functional. Version v0.5 and v0.6 both use Teal 10, but are also not functional.
-Version v0.7 - v0.9 are able to optin, but not functional as applications.
+For complete versions history, see versions.md.
 Version v1.0 and v1.1 are functional.
-
-**v0.0**
-
-v0.0 App ID 2267436284
-
-**v0.1**
-
-v0.1 App ID 2267616358
-
-**v0.2**
-
-v0.2 App ID 2267749636
-
-**v0.3**
-
-v0.3 App ID 2269161869
-
-**v0.4**
-
-v0.4 App ID 2269165240
-
-v0.4 App Account 3IIMGQUYHAGU7RXFTCD6KO5N4TNMWKWY5UIHMNGHNAXWTCCB5G6Z2XH3II
-
-**v0.5**
-
-v0.5 App ID 2302405696
-
-v0.5 App Account E57YHA5WQZCEOHJ326R3SACSHK3HRRWBUFTYBH4E2SBYYNIFOVQD7ZDUAQ
-
-**v0.6**
-
-v0.6 App ID 2304378520
-
-v0.6 App Account FEZCDW5JVYUMGDDMOBDNAUFEQFSG2QM322XKEMG4OPTXLD4PLDCWXVPLG4
-
-**v0.7**
-
-v0.7 App ID 2307344688
-
-v0.7 App Account B44AKSMBEO6ZVAWSXSQX2AIE3Z5OCMNYZEATNOBBSWEIXZHRMO6YPDE4J4
-
-**v0.8**
-
-v0.8 App ID 2307395041
-
-v0.8 App Account 4CQG7GKSMFSO427SKDRR2OYE7TKZRA56JXXGMOPH2YJHZ7RYIFGU5RJNSM
-
-**v0.9**
-
-v0.9 App ID 2307432714
-
-v0.9 App Account VKOTZ7M53NP56BKDFXOFNCVJDJEORIY7F6WZXOEGKXYJ2YIEQANORKKZS4
 
 **v1.0**
 

@@ -1,0 +1,209 @@
+#pragma version 10
+txn ApplicationID
+int 0
+==
+bnz main_l20
+txn OnCompletion
+int OptIn
+==
+bnz main_l19
+gtxn 1 TypeEnum
+int pay
+==
+gtxn 1 Amount
+int 10000
+>=
+&&
+gtxn 1 Receiver
+global CurrentApplicationAddress
+==
+&&
+bnz main_l18
+gtxn 1 TypeEnum
+int axfer
+==
+gtxn 1 XferAsset
+int 297995609
+==
+&&
+gtxn 1 AssetReceiver
+global CurrentApplicationAddress
+==
+&&
+gtxn 1 AssetAmount
+int 10000
+==
+&&
+bnz main_l7
+int 1
+bnz main_l6
+err
+main_l6:
+int 0
+return
+main_l7:
+txn Sender
+byte "number"
+global Round
+itob
+global LatestTimestamp
+itob
+concat
+sha256
+extract 0 8
+btoi
+int 8
+%
+app_local_put
+global Round
+itob
+global LatestTimestamp
+itob
+concat
+sha256
+extract 0 8
+btoi
+int 8
+%
+int 7
+==
+bnz main_l15
+global Round
+itob
+global LatestTimestamp
+itob
+concat
+sha256
+extract 0 8
+btoi
+int 8
+%
+int 0
+==
+bnz main_l13
+global Round
+itob
+global LatestTimestamp
+itob
+concat
+sha256
+extract 0 8
+btoi
+int 8
+%
+int 7
+!=
+global Round
+itob
+global LatestTimestamp
+itob
+concat
+sha256
+extract 0 8
+btoi
+int 8
+%
+int 0
+!=
+&&
+bnz main_l12
+int 0
+return
+main_l11:
+int 0
+return
+main_l12:
+itxn_begin
+int axfer
+itxn_field TypeEnum
+int 297995609
+itxn_field XferAsset
+txn Sender
+itxn_field AssetReceiver
+int 4400
+itxn_field AssetAmount
+itxn_submit
+int 1
+return
+int 1
+return
+main_l13:
+global Round
+itob
+global LatestTimestamp
+itob
+concat
+sha256
+extract 0 8
+btoi
+int 8
+%
+int 0
+==
+bz main_l11
+itxn_begin
+int axfer
+itxn_field TypeEnum
+int 297995609
+itxn_field XferAsset
+addr BNFIREKGRXEHCFOEQLTX3PU5SUCMRKDU7WHNBGZA4SXPW42OAHZBP7BPHY
+itxn_field AssetReceiver
+int 10000
+itxn_field AssetAmount
+int 1000
+itxn_field Fee
+itxn_submit
+int 1
+return
+int 1
+return
+main_l15:
+global Round
+itob
+global LatestTimestamp
+itob
+concat
+sha256
+extract 0 8
+btoi
+int 8
+%
+int 7
+==
+bnz main_l17
+int 0
+return
+main_l17:
+itxn_begin
+int axfer
+itxn_field TypeEnum
+int 297995609
+itxn_field XferAsset
+txn Sender
+itxn_field AssetReceiver
+int 33300
+itxn_field AssetAmount
+itxn_submit
+int 1
+return
+int 1
+return
+main_l18:
+itxn_begin
+int axfer
+itxn_field TypeEnum
+int 297995609
+itxn_field XferAsset
+global CurrentApplicationAddress
+itxn_field AssetReceiver
+int 0
+itxn_field AssetAmount
+itxn_submit
+int 1
+return
+main_l19:
+int 1
+return
+main_l20:
+int 1
+return

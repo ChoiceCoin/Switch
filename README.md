@@ -35,6 +35,11 @@ The smart contract:
 **v1.1** |  App ID **2311621083** | [PeraExplorer](https://explorer.perawallet.app/application/2311621083/) | [AlloExplorer](https://allo.info/application/2311621083)
 
 **v1.1** | App Account **KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE** | [PeraExplorer](https://explorer.perawallet.app/address/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE/) | [AlloExplorer](https://allo.info/account/KMJG6OAMMSQYEQPEEQ3V5VZVPLEE3FLGIIRBGTOQMINOFKONGGOH6BCOHE)
+
+____________________________________________________________
+**v2.0**
+
+Switch **v2.0** is currently in development. [AlloExplorer](https://allo.info/application/2320890724) | [PeraExplorer](https://explorer.perawallet.app/application/2320890724/)
 ____________________________________________________________
 
 # Deployment 
